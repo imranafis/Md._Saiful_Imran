@@ -66,7 +66,7 @@ const PROFILE_DATA = {
       description:
         "AditorX is a fast, flexible, and fully customizable rich text editor for modern web applications. It provides a smooth writing experience with built-in formatting tools, keyboard shortcuts, and an intuitive UI. Perfect for developers who need a lightweight but powerful editor.",
       link: "https://imranafis.github.io/AditorX/",
-      image: "./public/AditorX.png",
+      image: "/public/AditorX.png",
     },
 
     {
