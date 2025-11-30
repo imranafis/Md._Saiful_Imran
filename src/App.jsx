@@ -58,7 +58,7 @@ const PROFILE_DATA = {
       description:
         "A minimal yet powerful journaling app that helps you organize your day, capture thoughts effortlessly, and stay consistent with your goals.",
       link: "https://imranafis.github.io/Notive/",
-      image: "/Notive.png",
+      image: "./Notive.png",
     },
 
     {
@@ -66,7 +66,7 @@ const PROFILE_DATA = {
       description:
         "AditorX is a fast, flexible, and fully customizable rich text editor for modern web applications. It provides a smooth writing experience with built-in formatting tools, keyboard shortcuts, and an intuitive UI. Perfect for developers who need a lightweight but powerful editor.",
       link: "https://imranafis.github.io/AditorX/",
-      image: "/public/AditorX.png",
+      image: "./AditorX.png",
     },
 
     {
@@ -74,35 +74,35 @@ const PROFILE_DATA = {
       description:
         "Automatically solves simple math CAPTCHAs on the AIUB portal instantly on page load. Instantly solves AIUB captcha and auto-logs in using saved credentials. No need to click the extension — just install it and it works silently in the background.",
       link: "https://chromewebstore.google.com/detail/aiub-autocaptcha/kdflbpdcmknemkmmllpfdcpjohcknbhe",
-      image: "/AIUB AutoCaptcha.png",
+      image: "./AIUB AutoCaptcha.png",
     },
     {
       name: "AIUB Form Filler",
       description:
         "AIUB Teachers Performance Evaluation - Questionnaires Form Filler. Simplify your AIUB Teachers Performance Evaluation process with this Chrome extension. Save time and complete evaluation forms effortlessly!",
       link: "https://chromewebstore.google.com/detail/aiub-form-filler/pogkfmlgcpoiiclfockmdkojpfbnhgep",
-      image: "/AIUB Form Filler.png",
+      image: "./AIUB Form Filler.png",
     },
     {
       name: "Aessenger",
       description:
         "A messaging application interface demonstrating UI/UX design, real-time updates, and complex frontend state handling for chat environments.",
       link: "https://imranafis.github.io/Aessenger/",
-      image: "/Aessenger.png",
+      image: "./Aessenger.png",
     },
     {
       name: "MediScrape",
       description:
         "A data scraping utility app highlighting backend and Python scripting skills to aggregate medical data efficiently from various sources.",
       link: "https://imranafis.github.io/MediScrape/",
-      image: "/MediScrape.png",
+      image: "./MediScrape.png",
     },
     {
       name: "Pre-registration",
       description:
         "A web application for pre-registration, built using core web technologies to streamline user data entry and validation processes.",
       link: "https://imranafis.github.io/Pre-registration/",
-      image: "/Pre-registration.png",
+      image: "./Pre-registration.png",
     },
   ],
 };
