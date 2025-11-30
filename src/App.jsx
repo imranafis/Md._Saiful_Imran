@@ -131,7 +131,6 @@ const Typewriter = ({ text, speed = 150, deleteSpeed = 50, pause = 2000 }) => {
           setDisplayedText(text.slice(0, displayedText.length - 1));
         }, deleteSpeed);
       } else {
-        // Finished deleting, switch to typing immediately
         setIsDeleting(false);
       }
     } else {
