@@ -233,8 +233,7 @@ const Navigation = ({
 // --- VIDEO RESUME COMPONENT (NEW) ---
 const VideoResumeSection = () => {
   // Placeholder URL: REPLACE with your actual YouTube video embed link
-  const VIDEO_URL =
-    "https://www.youtube.com/embed/dQw4w9WgXcQ?si=G0K9yB2Z7_F-sQ6p";
+  const VIDEO_URL = "https://www.youtube.com/embed/FmOU39w-VKc";
 
   return (
     <div className="home-section video-resume-section">
