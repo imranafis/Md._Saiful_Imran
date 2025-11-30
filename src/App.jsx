@@ -12,7 +12,7 @@ import {
   Code2,
   Sparkles,
   User,
-  Youtube, // <-- ADDED for Video Resume Icon
+  Youtube,
 } from "lucide-react";
 import "./App.css";
 
@@ -114,6 +114,44 @@ const renderSkillTags = (skillString) => {
     .split(",")
     .map((skill) => skill.trim())
     .filter(Boolean);
+};
+
+// --- NEW TYPEWRITER COMPONENT ---
+const Typewriter = ({ text, speed = 150, deleteSpeed = 50, pause = 2000 }) => {
+  const [displayedText, setDisplayedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    let timeout;
+
+    if (isDeleting) {
+      if (displayedText.length > 0) {
+        // Deleting
+        timeout = setTimeout(() => {
+          setDisplayedText(text.slice(0, displayedText.length - 1));
+        }, deleteSpeed);
+      } else {
+        // Finished deleting, switch to typing immediately
+        setIsDeleting(false);
+      }
+    } else {
+      if (displayedText.length < text.length) {
+        // Typing
+        timeout = setTimeout(() => {
+          setDisplayedText(text.slice(0, displayedText.length + 1));
+        }, speed);
+      } else {
+        // Finished typing, wait (pause) before deleting
+        timeout = setTimeout(() => {
+          setIsDeleting(true);
+        }, pause);
+      }
+    }
+
+    return () => clearTimeout(timeout);
+  }, [displayedText, isDeleting, text, speed, deleteSpeed, pause]);
+
+  return <span className="typewriter-cursor">{displayedText}</span>;
 };
 
 // --- COMPONENTS ---
@@ -228,7 +266,10 @@ const HomePage = ({ navigate }) => {
           <h1 className="hero-title">
             Hi, I'm <span>{PROFILE_DATA.name}</span>
           </h1>
-          <h2 className="hero-subtitle">{PROFILE_DATA.title}</h2>
+          <h2 className="hero-subtitle">
+            {/* UPDATED: Uses Typewriter component */}
+            <Typewriter text={PROFILE_DATA.title} />
+          </h2>
           <div className="hero-summary">
             {PROFILE_DATA.summary.map((para, idx) => (
               <p key={idx}>{para}</p>
@@ -386,6 +427,7 @@ const AboutPage = () => {
             <br />
             BSc in CSE (2023-Present)
           </p>
+          <br />
           <h3>Core Focus</h3>
           <ul>
             <li>Frontend Mastery (React, Hooks, Redux/Context)</li>
@@ -404,7 +446,7 @@ const ProjectsPage = () => {
   return (
     <div className="page projects-page">
       <h1 className="page-title">
-        <Code2 size={32} className="icon-left" /> My Projects
+        <Code2 size={45} className="icon-left" /> My Projects
       </h1>
       <div className="projects-grid">
         {PROFILE_DATA.projects.map((project, index) => (

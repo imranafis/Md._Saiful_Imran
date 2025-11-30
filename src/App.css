@@ -1095,3 +1095,25 @@ a.btn {
     font-size: 2rem;
   }
 }
+
+/* =============================================
+  TYPEWRITER EFFECT (NEW)
+============================================ */
+.typewriter-cursor::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 2px;
+  animation: blinkCursor 0.8s step-end infinite;
+  color: #ff4500;
+  font-weight: 400;
+}
+
+@keyframes blinkCursor {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
