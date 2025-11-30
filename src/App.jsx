@@ -32,7 +32,7 @@ const PROFILE_DATA = {
     email: "iimranafis@gmail.com",
     linkedin: "https://www.linkedin.com/in/imranafis/",
     github: "https://github.com/imranafis/",
-    cv_link: "/Md._Saiful_Imran.pdf",
+    cv_link: "./Md._Saiful_Imran.pdf",
   },
   experience: {
     title: "WEB DEVELOPER (STARTUP)",
