@@ -86,21 +86,21 @@ const PROFILE_DATA = {
     {
       name: "Aessenger",
       description:
-        "A messaging application interface demonstrating UI/UX design, real-time updates, and complex frontend state handling for chat environments.",
+        "A messaging application, real-time updates, high quality image sharing, and complex frontend state handling for chat environments.",
       link: "https://imranafis.github.io/Aessenger/",
       image: "./Aessenger.png",
     },
     {
       name: "MediScrape",
       description:
-        "A data scraping utility app highlighting backend and Python scripting skills to aggregate medical data efficiently from various sources.",
+        "Extract data from Prescription, and gives a statistic report based on everything available on prescription.",
       link: "https://imranafis.github.io/MediScrape/",
       image: "./MediScrape.png",
     },
     {
       name: "Pre-registration",
       description:
-        "A web application for pre-registration, built using core web technologies to streamline user data entry and validation processes.",
+        "AIUB Pre-registration type that gives an idea about which course is ready for next semester.",
       link: "https://imranafis.github.io/Pre-registration/",
       image: "./Pre-registration.png",
     },
