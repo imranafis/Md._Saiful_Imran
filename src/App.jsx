@@ -230,28 +230,6 @@ const Navigation = ({
   );
 };
 
-// --- VIDEO RESUME COMPONENT (NEW) ---
-const VideoResumeSection = () => {
-  // Placeholder URL: REPLACE with your actual YouTube video embed link
-  const VIDEO_URL = "https://www.youtube.com/embed/FmOU39w-VKc";
-
-  return (
-    <div className="home-section video-resume-section">
-      <h3 className="section-title-small">
-        <Youtube size={28} className="icon-left" /> Video Resume
-      </h3>
-      <div className="video-container">
-        <iframe
-          src={VIDEO_URL}
-          title="Video Resume"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </div>
-    </div>
-  );
-};
 
 const HomePage = ({ navigate }) => {
   const combinedTools =
