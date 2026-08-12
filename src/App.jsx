@@ -46,7 +46,7 @@ const PROFILE_DATA = {
     ],
   },
   skills: {
-    languages: "JavaScript, TypeScript, Python, C++, C#, HTML, CSS",
+    languages: "JavaScript, TypeScript, Python, C++, C#, Java, Go",
     web: "React.js, Hooks, Context API, Redux, Node.js, RESTful APIs, Firebase, Chrome Extension Development, JWT, WebSockets",
     database: "MongoDB, Firestore",
     tools:
