@@ -230,7 +230,6 @@ const Navigation = ({
   );
 };
 
-
 const HomePage = ({ navigate }) => {
   const combinedTools =
     PROFILE_DATA.skills.database + ", " + PROFILE_DATA.skills.tools;
@@ -301,9 +300,6 @@ const HomePage = ({ navigate }) => {
       </div>
 
       <div className="home-sections-grid">
-        {/* INSERTED VIDEO RESUME SECTION HERE */}
-        <VideoResumeSection />
-
         <div className="home-section experience-section">
           <h3 className="section-title-small">
             <Sparkles size={24} className="icon-left" /> Current Experience
@@ -346,7 +342,7 @@ const HomePage = ({ navigate }) => {
                   <span key={index} className="skill-tag">
                     {skill}
                   </span>
-                )
+                ),
               )}
             </div>
           </div>
@@ -485,7 +481,7 @@ const ContactPage = () => {
           console.log("FAILED...", error.text);
           alert("Failed to send message. Please try again later.");
           setIsSending(false);
-        }
+        },
       );
   };
 
